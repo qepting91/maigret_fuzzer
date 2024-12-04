@@ -26,19 +26,6 @@ Executes Maigret searches for each generated username variation, storing results
   - `master_results.csv`: All search results
   - `filtered_results.csv`: Only successful matches
 
-  graph TD
-    A[usernames.csv] -->|Username Fuzzing| B[fuzzed_usernames.csv]
-    B -->|Maigret Search| C[batch_results/*.csv]
-    C -->|Combine All Results| D[master_results.csv]
-    D -->|Filter HTTP 200| E[filtered_results.csv]
-
-    style A fill:#f9f,stroke:#333
-    style B fill:#bbf,stroke:#333
-    style C fill:#ddd,stroke:#333
-    style D fill:#bfb,stroke:#333
-    style E fill:#ff9,stroke:#333
-
-
   ## Credits
 
 - [Maigret](https://github.com/soxoj/maigret) - Created by [soxoj](https://github.com/soxoj)
